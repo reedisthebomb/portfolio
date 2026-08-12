@@ -25,4 +25,4 @@ Live, in continuous production use monitoring a real network.
 
 ## Repository
 
-Private — available on request (not yet published to GitHub).
+**Private — stays private.** [github.com/reedisthebomb/network-topology-agent](https://github.com/reedisthebomb/network-topology-agent) — unlike the rest of this portfolio, this repo is not slated to go public even after the portfolio does. Its `data/` folder holds live device inventory and raw network-scan output for a real, currently-running home network, so it's excluded from any future visibility flip by design.

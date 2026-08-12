@@ -58,15 +58,11 @@ git push
 
 ---
 
-## 5. Projects not yet published to GitHub
+## 5. Publication status of every linked repo
 
-As of 2026-08-12, everything except **`network-topology-agent`** has been audited and pushed as new **private** GitHub repos: `absolute-beauty`, `convention-registration`, `district-12-website`, `home-assistant-agent`, `our-lives-platform`, `recovery-step-companion`, `spiritual-principle-day`, `windows-music-agent`. Each was checked first — `.gitignore` reviewed/hardened, filenames and git history grepped for secret patterns, and (for repos that already had git history) the full commit history scanned for ever-committed `.env`/key/credential files — before the first push. Nothing sensitive was found; `our-lives-platform`'s real `.env.local` was confirmed gitignored (only the safe `.env.example` template got committed).
+As of 2026-08-12, every project referenced in `projects/` has been audited and pushed as a **private** GitHub repo: `absolute-beauty`, `convention-registration`, `district-12-website`, `home-assistant-agent`, `network-topology-agent`, `our-lives-platform`, `recovery-step-companion`, `spiritual-principle-day`, `windows-music-agent`. Each was checked first — `.gitignore` reviewed/hardened, filenames and git history grepped for secret patterns, and (for repos that already had git history) the full commit history scanned for ever-committed `.env`/key/credential files — before the first push. Nothing sensitive turned up; `our-lives-platform`'s real `.env.local` was confirmed gitignored (only the safe `.env.example` template got committed).
 
-**`network-topology-agent` is intentionally held back.** Its `data/` folder is already tracked in git and contains live network inventory — `devices.json`, raw `nmap` scan output, discovery logs — real IPs, hostnames, and device fingerprints for the actual home network this dashboard monitors. That's meaningfully more sensitive than "a stray API key" because it's reconnaissance data about a real, currently-running network, and it's already baked into the repo's commit history, not just sitting in the working tree. Two ways forward:
-1. **Scrub it first**: add `data/` (or the specific inventory files) to `.gitignore` going forward, then rewrite history to strip it retroactively (`git filter-repo` is the modern tool for this — do this *before* the first push, since rewriting published history is far messier) — then push clean.
-2. **Push as-is, keep it private indefinitely**: acceptable if this repo specifically is never meant to go public, even after the rest of the portfolio does.
-
-This needs an explicit decision rather than a default — say the word on which way to go and it'll get done.
+**Standing exception: `network-topology-agent` stays private permanently.** Its `data/` folder is tracked in git and holds live network inventory — `devices.json`, raw `nmap` scan output, discovery logs — real IPs, hostnames, and device fingerprints for the actual home network this dashboard monitors. That's reconnaissance data about a real, currently-running network, already baked into commit history. Decision made 2026-08-12: push it as-is and exclude it from the "going public" flip in §6 below, indefinitely. (If that ever changes, scrubbing it means rewriting history with `git filter-repo` *before* any public push — don't just add `data/` to `.gitignore` going forward, since the old commits would still hold it.)
 
 **Safe process for any future repo**, one at a time:
 
@@ -96,7 +92,7 @@ gh repo edit reedisthebomb/portfolio --visibility public
 
 Before flipping it:
 - [ ] Fill in the **Contact** section at the bottom of `README.md`.
-- [ ] Decide, project by project, whether each linked repo should also go public, stay private with "available on request," or be dropped from the portfolio entirely. Flipping the portfolio public does **not** auto-flip the linked repos — that's a separate, deliberate decision per repo.
+- [ ] Decide, project by project, whether each linked repo should also go public, stay private with "available on request," or be dropped from the portfolio entirely. Flipping the portfolio public does **not** auto-flip the linked repos — that's a separate, deliberate decision per repo. **`network-topology-agent` is a standing no** — leave it private regardless (see §5).
 - [ ] Re-read every project write-up once more for anything you wouldn't want an employer to see (this repo currently includes personal/recovery-themed projects on your explicit instruction — that's a legitimate choice, just make it consciously each time you touch visibility).
 - [ ] Optional: enable **GitHub Pages** (Settings → Pages → deploy from `main`) once public, so the README renders as an actual site instead of just a GitHub repo page.
 
