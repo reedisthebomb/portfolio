@@ -23,4 +23,4 @@ Early prototype.
 
 ## Repository
 
-Private — available on request (not yet published to GitHub).
+Private — [github.com/reedisthebomb/our-lives-platform](https://github.com/reedisthebomb/our-lives-platform)

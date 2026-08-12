@@ -24,4 +24,4 @@ Prototype.
 
 ## Repository
 
-Private — available on request (not yet published to GitHub).
+Private — [github.com/reedisthebomb/recovery-step-companion](https://github.com/reedisthebomb/recovery-step-companion)

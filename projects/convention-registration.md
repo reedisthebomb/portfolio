@@ -25,4 +25,4 @@ Built for and used at a real event; companion project `convention-status-viewer`
 
 ## Repository
 
-Private — available on request (not yet published to GitHub).
+Private — [github.com/reedisthebomb/convention-registration](https://github.com/reedisthebomb/convention-registration)

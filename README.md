@@ -26,7 +26,7 @@ See [`/certifications`](certifications/README.md) for Google Career Certificates
 | Certificate | Status |
 |---|---|
 | Google Cybersecurity Professional Certificate | In progress |
-| Google AI (track TBD) | In progress |
+| AI Fundamentals | ✅ Completed 2026-07-23 |
 
 ## Projects
 

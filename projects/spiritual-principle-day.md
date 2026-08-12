@@ -22,4 +22,4 @@ Live.
 
 ## Repository
 
-Private — available on request (not yet published to GitHub).
+Private — [github.com/reedisthebomb/spiritual-principle-day](https://github.com/reedisthebomb/spiritual-principle-day)

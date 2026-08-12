@@ -22,4 +22,4 @@ Setup/infrastructure, in use.
 
 ## Repository
 
-Private — available on request (not yet published to GitHub).
+Private — [github.com/reedisthebomb/windows-music-agent](https://github.com/reedisthebomb/windows-music-agent)

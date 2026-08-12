@@ -60,15 +60,15 @@ git push
 
 ## 5. Projects not yet published to GitHub
 
-Several real projects referenced in `projects/` exist only locally right now (marked "available on request" in their write-ups):
+As of 2026-08-12, everything except **`network-topology-agent`** has been audited and pushed as new **private** GitHub repos: `absolute-beauty`, `convention-registration`, `district-12-website`, `home-assistant-agent`, `our-lives-platform`, `recovery-step-companion`, `spiritual-principle-day`, `windows-music-agent`. Each was checked first — `.gitignore` reviewed/hardened, filenames and git history grepped for secret patterns, and (for repos that already had git history) the full commit history scanned for ever-committed `.env`/key/credential files — before the first push. Nothing sensitive was found; `our-lives-platform`'s real `.env.local` was confirmed gitignored (only the safe `.env.example` template got committed).
 
-- `network-topology-agent`, `convention-registration`, `absolute-beauty`, `home-assistant-agent`,
-  `district-12-website`, `recovery-step-companion`, `our-lives-platform`,
-  `spiritual-principle-day`, `windows-music-agent`
+**`network-topology-agent` is intentionally held back.** Its `data/` folder is already tracked in git and contains live network inventory — `devices.json`, raw `nmap` scan output, discovery logs — real IPs, hostnames, and device fingerprints for the actual home network this dashboard monitors. That's meaningfully more sensitive than "a stray API key" because it's reconnaissance data about a real, currently-running network, and it's already baked into the repo's commit history, not just sitting in the working tree. Two ways forward:
+1. **Scrub it first**: add `data/` (or the specific inventory files) to `.gitignore` going forward, then rewrite history to strip it retroactively (`git filter-repo` is the modern tool for this — do this *before* the first push, since rewriting published history is far messier) — then push clean.
+2. **Push as-is, keep it private indefinitely**: acceptable if this repo specifically is never meant to go public, even after the rest of the portfolio does.
 
-**Do not bulk-push these as-is.** Several contain things that must never enter git history — `our-lives-platform` has a live `.env.local`, and others (`convention-registration`, `home-assistant-agent`) touch payment sandboxes, database backups, or credentialed integrations. Git history is effectively permanent (even after `git rm`, old commits keep the secret unless history is rewritten), and since the plan is to eventually flip this whole portfolio public, anything linked from it deserves a real audit first, not just for now but for later.
+This needs an explicit decision rather than a default — say the word on which way to go and it'll get done.
 
-**Safe process per repo, one at a time:**
+**Safe process for any future repo**, one at a time:
 
 1. Confirm/write a `.gitignore` that excludes `.env*`, `node_modules/`, build output, `*.sqlite*`, `backups/`, and any credential/key files.
 2. Grep for likely secrets before the first commit:
@@ -76,11 +76,13 @@ Several real projects referenced in `projects/` exist only locally right now (ma
    grep -RniE "api[_-]?key|secret|password|token|BEGIN (RSA|PRIVATE) KEY" . \
      --exclude-dir={node_modules,.git,build,dist}
    ```
-3. `git init` (if not already), stage, and review `git status` / `git diff --stat` — actually look at the file list before the first commit, not just trust the `.gitignore`.
-4. Create the GitHub repo **private** first: `gh repo create reedisthebomb/<name> --private --source=. --push`
-5. Once satisfied nothing sensitive is in there, update that project's write-up in `portfolio/projects/` with the real repo link.
-
-Ask for this to be done project-by-project — it's worth the ten minutes each rather than rushing all nine at once.
+3. If the repo already has git history, also check what's *ever* been committed, not just the current working tree:
+   ```bash
+   git log --all --diff-filter=A --name-only --pretty=format: | sort -u | grep -iE '\.env|secret|credential|\.pem$|\.key$|token'
+   ```
+4. `git init` (if not already), stage, and review `git status` — actually look at the file list before the first commit, not just trust the `.gitignore`.
+5. Create the GitHub repo **private** first: `gh repo create reedisthebomb/<name> --private --source=. --push`
+6. Update that project's write-up in `portfolio/projects/` with the real repo link.
 
 ---
 
