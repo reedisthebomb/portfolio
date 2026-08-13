@@ -14,6 +14,9 @@ A production NOC dashboard deployed via Docker Compose on a home/small-office se
 - Bounded metrics/log storage (deliberate retention limits, not unbounded growth).
 - Consolidated health-check script (`scripts/health-check.sh`) for one-command system verification.
 - Full operator documentation (`docs/CORE_OPERATIONS.md`) covering access, updates, and recovery — written so the system is maintainable, not just functional.
+- Root-caused a silent resource leak on a fleet member (a stuck AI-agent service in an auth-failure retry loop, consuming ~42% CPU and 3GB RAM for weeks) by diffing host-level process data against container-level metrics — the leak was invisible to `docker stats` alone.
+- Repurposed a spare ARM SBC (an Android TV box reflashed with a Debian-based Linux distro) into an independent uptime monitor and a redundant Tailscale subnet router, so network monitoring survives even if the primary server has problems — directly informed by the resource-leak incident above.
+- Live camera NVR integration: ONVIF PTZ control and tuned dual-stream (record/detect) restreaming through go2rtc for pan-tilt IP cameras, with hardware-accelerated on-device object detection (no cloud dependency, no dedicated AI accelerator required).
 
 ## Stack
 
