@@ -13,7 +13,7 @@ Foundations of cybersecurity, security frameworks and controls, network security
 
 ## Coursework / modules
 
-- [ ] Foundations of Cybersecurity
+- [x] [Foundations of Cybersecurity](../google-cybersecurity-foundations/README.md) — completed 2026-08-21
 - [ ] Play It Safe: Manage Security Risks
 - [ ] Connect and Protect: Networks and Network Security
 - [ ] Tools of the Trade: Linux and SQL

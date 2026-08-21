@@ -7,6 +7,7 @@ Coursera and Credly issue a verification link for every completed certificate, a
 | Certificate | Status | Completed | Verify |
 |---|---|---|---|
 | [Google Cybersecurity Professional Certificate](google-cybersecurity/README.md) | In progress | — | — |
+| [Foundations of Cybersecurity](google-cybersecurity-foundations/README.md) | ✅ Completed | 2026-08-21 | [Verify](https://coursera.org/verify/R1TSKPNHN1OT) |
 | [AI Fundamentals](google-ai-fundamentals/README.md) | ✅ Completed | 2026-07-23 | [Verify](https://coursera.org/share/8d5c35d24f44ae14c4ae20af7b18ce47) |
 
 ## Adding a new certificate
