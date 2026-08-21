@@ -2,7 +2,7 @@
 
 Professional portfolio of software projects, infrastructure work, and Google Career Certificates (via Coursera).
 
-> **Status:** private while in progress. See [SETUP.md](SETUP.md) for how this repo is organized, how it's kept up to date, and the plan for making it public.
+See [SETUP.md](SETUP.md) for how this repo is organized and kept up to date.
 
 ## Summary
 
@@ -50,4 +50,5 @@ portfolio/
 
 ## Contact
 
-_(add your preferred contact method / LinkedIn / email here when ready to share)_
+- **Email:** reedisthebomb.com@gmail.com
+- **LinkedIn:** [linkedin.com/in/jimmie-clark-507414194](https://www.linkedin.com/in/jimmie-clark-507414194)
