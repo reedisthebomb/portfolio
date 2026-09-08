@@ -26,5 +26,5 @@ Live, actively developed with regular releases.
 
 ## Repositories
 
-- Web/server app — Private: [github.com/reedisthebomb/tenth-step](https://github.com/reedisthebomb/tenth-step)
-- Android app — Private: [github.com/reedisthebomb/tenth-step-android](https://github.com/reedisthebomb/tenth-step-android)
+- Web/server app — Private: `github.com/reedisthebomb/tenth-step`
+- Android app — Private: `github.com/reedisthebomb/tenth-step-android`

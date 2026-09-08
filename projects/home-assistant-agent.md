@@ -23,4 +23,4 @@ Active, in use managing a real home network.
 
 ## Repository
 
-Private — [github.com/reedisthebomb/home-assistant-agent](https://github.com/reedisthebomb/home-assistant-agent)
+Private — `github.com/reedisthebomb/home-assistant-agent`

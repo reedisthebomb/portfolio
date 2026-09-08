@@ -23,4 +23,4 @@ Live, backing other internal projects' AI features.
 
 ## Repository
 
-Private — [github.com/reedisthebomb/claude-relay](https://github.com/reedisthebomb/claude-relay)
+Private — `github.com/reedisthebomb/claude-relay`

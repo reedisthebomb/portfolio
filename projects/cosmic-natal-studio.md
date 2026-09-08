@@ -24,4 +24,4 @@ Live, self-hosted.
 
 ## Repository
 
-Private — [github.com/reedisthebomb/cosmic-natal-studio](https://github.com/reedisthebomb/cosmic-natal-studio)
+Private — `github.com/reedisthebomb/cosmic-natal-studio`

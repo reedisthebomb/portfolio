@@ -22,4 +22,4 @@ Live.
 
 ## Repository
 
-Private — [github.com/reedisthebomb/Recovery.ahent.12step](https://github.com/reedisthebomb/Recovery.ahent.12step)
+Private — `github.com/reedisthebomb/Recovery.ahent.12step`

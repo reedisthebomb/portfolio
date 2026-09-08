@@ -23,4 +23,4 @@ Early prototype.
 
 ## Repository
 
-Private — [github.com/reedisthebomb/our-lives-platform](https://github.com/reedisthebomb/our-lives-platform)
+Private — `github.com/reedisthebomb/our-lives-platform`

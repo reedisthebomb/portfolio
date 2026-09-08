@@ -22,4 +22,4 @@ Live.
 
 ## Repository
 
-Private — [github.com/reedisthebomb/spiritual-principle-day](https://github.com/reedisthebomb/spiritual-principle-day)
+Private — `github.com/reedisthebomb/spiritual-principle-day`

@@ -23,4 +23,4 @@ Live, in use by the business.
 
 ## Repository
 
-Private — [github.com/reedisthebomb/absolute-beauty](https://github.com/reedisthebomb/absolute-beauty)
+Private — `github.com/reedisthebomb/absolute-beauty`

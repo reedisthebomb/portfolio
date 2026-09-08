@@ -21,4 +21,4 @@ Draft, in development.
 
 ## Repository
 
-Private — [github.com/reedisthebomb/district-12-website](https://github.com/reedisthebomb/district-12-website)
+Private — `github.com/reedisthebomb/district-12-website`

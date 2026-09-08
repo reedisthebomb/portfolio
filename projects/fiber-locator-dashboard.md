@@ -23,4 +23,4 @@ Live, in active daily operational use.
 
 ## Repository
 
-Private — [github.com/reedisthebomb/fiber.locator.dashboard](https://github.com/reedisthebomb/fiber.locator.dashboard)
+Private — `github.com/reedisthebomb/fiber.locator.dashboard`
