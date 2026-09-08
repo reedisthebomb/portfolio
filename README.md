@@ -37,6 +37,7 @@ See [`/projects`](projects/README.md) for the full list with descriptions, stack
 - **[Convention Registration Desk](projects/convention-registration.md)** — full-stack event operations platform: payments, badge printing, check-in, financial reconciliation, e2e-tested.
 - **[Tenth Step Companion](projects/tenth-step.md)** — web + Android app with a full self-hosted voice pipeline (TTS narration, STT input, forced text/audio alignment).
 - **[Cosmic Natal Studio](projects/cosmic-natal-studio.md)** — local-first app performing real Swiss Ephemeris astronomical calculations.
+- **[Absolute Beauty](projects/absolute-beauty.md)** — salon operations dashboard: scheduling, client history, a goal-driven pricing calculator, and on-device receipt OCR feeding a Schedule-C tax export.
 
 ## How this portfolio is organized
 
