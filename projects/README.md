@@ -10,6 +10,7 @@ All projects below are real, working systems — most are in active production u
 | [Convention Registration Desk](convention-registration.md) | Full-stack event ops: payments, badges, check-in, reconciliation | TypeScript, React, SQLite, Square, Playwright | Live (event-built) |
 | [Cosmic Natal Studio](cosmic-natal-studio.md) | Local-first astrology app with real Swiss Ephemeris calculations | Python, Flask, SQLite | Live |
 | [Absolute Beauty](absolute-beauty.md) | Salon operations: scheduling, clients, pricing calculator, inventory, on-device receipt-OCR tax organizer | React 19, TypeScript, Tesseract.js | Live |
+| [Tech It Easy](tech-it-easy.md) | Business website + operations platform: request funnel, CRM/tickets/estimates, n8n automation, optional local AI | Next.js 16, React 19, PostgreSQL, Drizzle, n8n, Docker, Playwright | Live (private network; public launch pending) |
 | [Claude Relay](claude-relay.md) | Isolated LLM-access relay avoiding per-token API key exposure | Docker, Tailscale | Live |
 | [Home Assistant Agent](home-assistant-agent.md) | CLI automation agent for a real home-automation deployment | CLI, Home Assistant REST API | Active |
 | [A.A. District 12 Website](district-12-website.md) | Public information site for a regional service district | Astro | Draft |
