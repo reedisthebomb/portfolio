@@ -5,6 +5,7 @@ All projects below are real, working systems — most are in active production u
 | Project | What it is | Stack | Status |
 |---|---|---|---|
 | [Fiber Locator Dashboard](fiber-locator-dashboard.md) | Cloud dashboard for fiber-locate ticket operations, multi-source GIS data reconciliation | Node.js, React, Android | Live |
+| [Coatings & More](coatings-and-more.md) | Estimate/invoice PWA for a painting contractor: exact pricing math, alternative options, branded PDFs | TypeScript, React, Fastify, SQLite, Playwright | Live |
 | [Network Topology Agent](network-topology-agent.md) | Self-hosted NOC dashboard: live topology, security triage, health monitoring | Docker Compose, Tailscale | Live — repo stays private permanently (contains live network data), see SETUP.md §5 |
 | [Recovery Sponsor Hub](recovery-ahent-12step.md) | AI-backed AA/NA support tool: chat, meeting topics, sharing points grounded in program literature | Node.js, Express | Live |
 | [Convention Registration Desk](convention-registration.md) | Full-stack event ops: payments, badges, check-in, reconciliation | TypeScript, React, SQLite, Square, Playwright | Live (event-built) |
