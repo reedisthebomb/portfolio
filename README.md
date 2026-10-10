@@ -36,8 +36,6 @@ See [`/projects`](projects/README.md) for the full list with descriptions, stack
 - **[Network Topology Agent](projects/network-topology-agent.md)** — self-hosted NOC dashboard: live topology mapping, security triage, automated health checks.
 - **[Convention Registration Desk](projects/convention-registration.md)** — full-stack event operations platform: payments, badge printing, check-in, financial reconciliation, e2e-tested.
 - **[Tenth Step Companion](projects/tenth-step.md)** — web + Android app with a full self-hosted voice pipeline (TTS narration, STT input, forced text/audio alignment).
-- **[Cosmic Natal Studio](projects/cosmic-natal-studio.md)** — local-first app performing real Swiss Ephemeris astronomical calculations.
-- **[Absolute Beauty](projects/absolute-beauty.md)** — salon operations dashboard: scheduling, client history, a goal-driven pricing calculator, and on-device receipt OCR feeding a Schedule-C tax export.
 - **[Tech It Easy](projects/tech-it-easy.md)** — business website and operations platform in one Next.js app: request funnel, leads → tickets → estimates → projects, n8n automation, optional local AI, animated SVG illustrations, e2e- and accessibility-tested.
 - **[Coatings & More](projects/coatings-and-more.md)** — estimate/invoice PWA for a painting contractor: exact integer-cent pricing (forward and backward), mutually exclusive alternative options, immutable per-revision PDFs, and an idempotent historical import.
 
