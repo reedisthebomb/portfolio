@@ -12,7 +12,7 @@ Full-stack builder and self-hosted-infrastructure operator — production dashbo
 
 - **Languages:** TypeScript/JavaScript, Python, Kotlin/Java (Android), SQL, Bash
 - **Frontend:** React, Next.js, Vite, Astro
-- **Backend:** Node.js, Flask, PostgreSQL (Drizzle ORM), SQLite/libSQL, REST API design
+- **Backend:** Node.js, Fastify, Flask, PostgreSQL (Drizzle ORM), SQLite/libSQL, REST API design
 - **Infrastructure:** Docker Compose, Tailscale (private mesh networking), self-hosted deployment, backup/restore & rollback procedures
 - **Integrations:** n8n workflow automation (HMAC-signed webhooks), Square (payments/Terminal), Jotform, GIS/mapping data (Vetro, GeoCall), Home Assistant, Swiss Ephemeris astronomical data
 - **AI/voice engineering:** self-hosted TTS (Piper, Kokoro), self-hosted STT (Whisper/`faster-whisper`), forced audio/text alignment, LLM-relay infrastructure
@@ -39,6 +39,7 @@ See [`/projects`](projects/README.md) for the full list with descriptions, stack
 - **[Cosmic Natal Studio](projects/cosmic-natal-studio.md)** — local-first app performing real Swiss Ephemeris astronomical calculations.
 - **[Absolute Beauty](projects/absolute-beauty.md)** — salon operations dashboard: scheduling, client history, a goal-driven pricing calculator, and on-device receipt OCR feeding a Schedule-C tax export.
 - **[Tech It Easy](projects/tech-it-easy.md)** — business website and operations platform in one Next.js app: request funnel, leads → tickets → estimates → projects, n8n automation, optional local AI, animated SVG illustrations, e2e- and accessibility-tested.
+- **[Coatings & More](projects/coatings-and-more.md)** — estimate/invoice PWA for a painting contractor: exact integer-cent pricing (forward and backward), mutually exclusive alternative options, immutable per-revision PDFs, and an idempotent historical import.
 
 ## How this portfolio is organized
 
