@@ -9,6 +9,8 @@ A production dashboard used to manage dig-ticket workflow for fiber-optic line l
 ## Engineering highlights
 
 - Multi-source data ingestion and reconciliation (Outlook exports, GeoCall, Vetro GIS layers) into one coherent record per ticket.
+- **Smart daily routing.** A rewritten route planner that honours real dispatch rules (day-based due dates, emergencies first, recall/second-request priorities, hidden/duplicate handling), inserts opportunistic stops by cheapest insertion, computes ETAs, flags overbooked or at-risk days, and rolls over after hours and weekends. Road-network routing runs on a self-hosted Valhalla instance (tiled, cached, time-budgeted, with a safe fallback). Ticket due dates are never altered by the planner.
+- **Locate Overview and area history** views, covered by planner unit tests and Playwright smoke tests.
 - Server-side persistence of a "Locator Default View" so operational state survives across sessions.
 - Native Android companion app distributed through the Play Store (Android Auto compatibility required moving off sideloaded builds).
 - Deployed and run continuously on a cloud server, not a local prototype.

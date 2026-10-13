@@ -14,7 +14,7 @@ Full-stack builder and self-hosted-infrastructure operator — production dashbo
 - **Frontend:** React, Next.js, Vite, Astro
 - **Backend:** Node.js, Fastify, Flask, PostgreSQL (Drizzle ORM), SQLite/libSQL, REST API design
 - **Infrastructure:** Docker Compose, Tailscale (private mesh networking), self-hosted deployment, backup/restore & rollback procedures
-- **Integrations:** n8n workflow automation (HMAC-signed webhooks), Square (payments/Terminal), Jotform, GIS/mapping data (Vetro, GeoCall), Home Assistant, Swiss Ephemeris astronomical data
+- **Integrations:** Valhalla road routing, n8n workflow automation (HMAC-signed webhooks), Square (payments/Terminal), Jotform, GIS/mapping data (Vetro, GeoCall), Home Assistant, Swiss Ephemeris astronomical data
 - **AI/voice engineering:** self-hosted TTS (Piper, Kokoro), self-hosted STT (Whisper/`faster-whisper`), forced audio/text alignment, LLM-relay infrastructure
 - **Testing:** Vitest, Playwright (e2e)
 - **Security-conscious design:** RBAC, audit logging, encrypted-field storage (Fernet), password-free scoped SSH access, network-gated (Tailscale-only) services
@@ -30,12 +30,13 @@ See [`/certifications`](certifications/README.md) for Google Career Certificates
 
 ## Projects
 
-See [`/projects`](projects/README.md) for the full list with descriptions, stacks, and status. Highlights:
+See [`/projects`](projects/README.md) for the full list with descriptions, stacks, and status. Highlights (see the full list for another ten):
 
-- **[Fiber Locator Dashboard](projects/fiber-locator-dashboard.md)** — production cloud dashboard reconciling multi-source GIS/ticketing data, with a native Android companion app on the Play Store.
+- **[Fiber Locator Dashboard](projects/fiber-locator-dashboard.md)** — production cloud dashboard reconciling multi-source GIS/ticketing data, with a smart daily route planner (self-hosted Valhalla) and a native Android companion app on the Play Store.
 - **[Network Topology Agent](projects/network-topology-agent.md)** — self-hosted NOC dashboard: live topology mapping, security triage, automated health checks.
 - **[Convention Registration Desk](projects/convention-registration.md)** — full-stack event operations platform: payments, badge printing, check-in, financial reconciliation, e2e-tested.
-- **[Tenth Step Companion](projects/tenth-step.md)** — web + Android app with a full self-hosted voice pipeline (TTS narration, STT input, forced text/audio alignment).
+- **[Tenth Step Companion](projects/tenth-step.md)** — web app with a full self-hosted voice pipeline (TTS narration, STT input, forced text/audio alignment).
+- **[District 12 Service Command Center](projects/district12-command-center.md)** — private nonprofit treasurer/secretary platform: audited ledger with split payments, budgets vs. actual, strict separation of duties, nightly off-site backups.
 - **[Tech It Easy](projects/tech-it-easy.md)** — business website and operations platform in one Next.js app: request funnel, leads → tickets → estimates → projects, n8n automation, optional local AI, animated SVG illustrations, e2e- and accessibility-tested.
 - **[Coatings & More](projects/coatings-and-more.md)** — estimate/invoice PWA for a painting contractor: exact integer-cent pricing (forward and backward), mutually exclusive alternative options, immutable per-revision PDFs, and an idempotent historical import.
 
