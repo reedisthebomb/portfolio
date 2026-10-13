@@ -15,7 +15,6 @@ All projects below are real, working systems — most are in active production u
 | [Tech It Easy](tech-it-easy.md) | Business website + operations platform: request funnel, CRM/tickets/estimates, n8n automation, optional local AI | Next.js 16, React 19, PostgreSQL, Drizzle, n8n, Docker, Playwright | Live (private network; public launch pending) |
 | [Claude Relay](claude-relay.md) | Isolated LLM-access relay avoiding per-token API key exposure | Docker, Tailscale | Live |
 | [Home Assistant Agent](home-assistant-agent.md) | CLI automation agent for a real home-automation deployment | CLI, Home Assistant REST API | Active |
-| [A.A. District 12 Website](district-12-website.md) | Public information site for a regional service district | Astro | Draft |
 | [Tenth Step Companion](tenth-step.md) | Personal-development app with a self-hosted TTS/STT/forced-alignment voice pipeline and audiobooks | Python, Piper/Kokoro TTS, Whisper, PWA | Live |
 | [Step Companion](recovery-step-companion.md) | Native Android app with sponsor-review state machine | Android/Kotlin | Prototype |
 | [Our Life on the Daily](our-lives-platform.md) | Household coordination platform: shared scheduling, voice-note capture | TypeScript, Vite, React | Early prototype |
